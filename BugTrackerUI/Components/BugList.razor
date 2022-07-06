@@ -8,15 +8,13 @@
             <th>Priority</th>
         </tr>
     </thead>
-    <tbody>
-    @foreach (Bug bug in Bugs)
+    @foreach (var bug in Bugs)
     {
         <tr>@bug.Id</tr>
         <tr>@bug.Title</tr>
         <tr>@bug.Description</tr>
         <tr>@bug.Priority</tr>
     }
-    </tbody>
 </table>
 
 @code {
