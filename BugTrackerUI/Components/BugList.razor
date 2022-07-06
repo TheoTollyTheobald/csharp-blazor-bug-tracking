@@ -10,10 +10,12 @@
     </thead>
     @foreach (var bug in Bugs)
     {
-        <tr>@bug.Id</tr>
-        <tr>@bug.Title</tr>
-        <tr>@bug.Description</tr>
-        <tr>@bug.Priority</tr>
+        <tr>
+            <td>@bug.Id</td>
+            <td>@bug.Title</td>
+            <td>@bug.Description</td>
+            <td>@bug.Priority</td>
+        </tr>
     }
 </table>
 
